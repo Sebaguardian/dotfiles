@@ -1,0 +1,141 @@
+{
+  "options": {
+    "showOptionsButton": false
+  },
+  "user": {
+    "name": "kris"
+  },
+  "title": {
+    "defaultTitle": "mtab",
+    "dynamic": {
+      "enabled": true
+    },
+    "faviconType": "custom"
+  },
+  "message": {
+    "enabled": true,
+    "font": {
+      "type": "custom",
+      "custom": "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    },
+    "textColor": "#e0def4",
+    "textSize": 2.1,
+    "type": "custom",
+    "customText": "MY\\nDELTARUNE.",
+    "weather": {
+      "unitsType": "f"
+    }
+  },
+  "wallpaper": {
+    "type": "fileUpload",
+    "enabled": true,
+    "url": "https://merrygoroundmagazine.com/wp-content/uploads/2018/12/Deltarune.gif",
+    "filters": {
+      "brightness": "0.7",
+      "blur": "0px"
+    }
+  },
+  "ui": {
+    "style": "glass",
+    "glassColor": "#19172490",
+    "blurStrength": "16px",
+    "foregroundColor": "#191724",
+    "backgroundColor": "#191724",
+    "highlightColor": "#ffffff20",
+    "cornerStyle": "round",
+    "customCSS": "/* input custom css... */"
+  },
+  "animations": {
+    "enabled": true,
+    "bookmarkTiming": "uniform",
+    "initialType": "animate-up-smooth",
+    "searchType": "animate-page-shrink",
+    "bookmarkType": "animate-page-shrink"
+  },
+  "search": {
+    "enabled": true,
+    "font": {
+      "type": "custom",
+      "custom": "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    },
+    "textColor": "#e0def4",
+    "placeholderText": "search...",
+    "bookmarkPlaceholderText": "find bookmark...",
+    "placeholderTextColor": "#908caa",
+    "searchIconColor": "#00a8b3",
+    "bookmarkIconColor": "#3b82f6",
+    "selectIconColor": "#f59e0b",
+    "engine": "startpage",
+    "useCustomEngine": false,
+    "customEngineURL": "",
+    "focusedBorderColor": "#ffff00",
+    "assist": {
+      "date": true,
+      "math": true,
+      "definitions": true,
+      "conversions": true
+    }
+  },
+  "hotkeys": {
+    "enabled": true,
+    "activationKey": " ",
+    "closePageKey": "x",
+    "searchBookmarksKey": "b"
+  },
+  "bookmarks": {
+    "type": "user-defined",
+    "showBookmarkNames": false,
+    "numberKeys": true,
+    "lineOrientation": "bottom",
+    "defaultFolderIconType": "ri-folder-fill",
+    "userDefinedCols": 4,
+    "userDefined": [
+      {
+        "type": "bookmark",
+        "name": "reddit",
+        "url": "https://www.reddit.com",
+        "color": "#ea9d34",
+        "iconType": "ri-reddit-fill",
+        "iconColor": "#ea9d34",
+        "fill": ""
+      },
+      {
+        "type": "bookmark",
+        "name": "youtube",
+        "url": "https://youtube.com",
+        "color": "#eb6f92",
+        "iconType": "ri-youtube-fill",
+        "iconColor": "#eb6f92",
+        "fill": "ss"
+      },
+      {
+        "type": "bookmark",
+        "name": "Arch Wiki",
+        "url": "https://wiki.archlinux.org/title/Main_page",
+        "color": "#1793d1",
+        "iconType": "nf-linux-archlinux",
+        "iconColor": "#1793d1",
+        "fill": ""
+      },
+      {
+        "type": "bookmark",
+        "name": "github",
+        "url": "https://github.com",
+        "color": "#6366f1",
+        "iconType": "ri-github-fill",
+        "iconColor": "#6366f1",
+        "fill": ""
+      }
+    ],
+    "defaultBlockyCols": 4,
+    "defaultBlockyColorType": "custom",
+    "defaultBlockyColor": "#ffffff",
+    "bookmarksLocationFirefox": "toolbar",
+    "defaultFaviconSource": "duckduckgo"
+  },
+  "extras": {
+    "snow": {
+      "enabled": "winter"
+    }
+  }
+}

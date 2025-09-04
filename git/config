@@ -1,0 +1,75 @@
+[user]
+    name = 
+    email = 
+
+[core]
+    compression = 6
+    whitespace = error
+    preloadindex = true
+
+[commit]
+    template = ~/.config/git/template
+    verbose = true
+
+[push]
+    autoSetupRemote = true
+    default = current
+    followTags = false
+
+[pull]
+    default = current
+
+[init]
+    defaultBranch = main
+
+[interactive]
+    diffFilter = diff-so-fancy --patch
+    singleKey  = true
+
+[log]
+    abbrevCommit = true
+
+[rebase]
+    autoStash = true
+    missingCommitsCheck = warn
+
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all
+
+[color.decorate]
+    HEAD = red
+    branch = blue
+    tag = yellow
+    remoteBranch = magenta
+
+[color "branch"]
+    current  = magenta
+    local    = default
+    remote   = yellow
+    upstream = green
+    plain    = blue
+
+[color "diff"]
+    meta       = yellow bold
+    frag       = magenta
+    context    = white
+    whitespace = yellow reverse
+    old        = red
+
+[diff]
+    context = 4
+    renames = copies
+    interHunkContext = 10
+
+[diff-so-fancy]
+    markEmptyLines = false
+
+[pager]
+    diff = diff-so-fancy | $PAGER
+
+
+[url "https://github.com/Sebaguardian/"]
+    insteadOf = "seb/"
+

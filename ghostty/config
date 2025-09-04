@@ -1,0 +1,26 @@
+#---------- look ----------#
+font-family = CozetteVector
+font-size = 18
+
+## too small
+# window-title-font-family = CozetteVector
+
+theme = rose-pine
+window-theme = ghostty
+
+# background-opacity = 0.85
+
+#custom-shader = cursor_smear.glsl # need to be build from source
+
+#---------- other ----------#
+confirm-close-surface = false
+
+mouse-hide-while-typing = true
+
+mouse-scroll-multiplier = 2
+
+shell-integration = detect
+
+cursor-style = bar
+
+config-file = "keymaps"

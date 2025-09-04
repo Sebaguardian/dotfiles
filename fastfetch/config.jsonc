@@ -1,0 +1,63 @@
+{
+  "$schema": "https://github.com/LierB/fastfetch/blob/master/presets/minimal.jsonc",
+
+  "logo": {
+      "type": "auto",
+      "source": "~/.config/fastfetch/deltarune.txt",
+      "width": 16,
+      "height": 10,
+
+    "color": {
+        "1": "#9ccfd8"
+    },
+
+    "padding": {
+        "top": 1
+    }
+  },
+
+    "display": {
+        "separator": " ›  "
+    },
+
+    "modules": [
+    "break",
+        {
+            "type": "os",
+            "key": "OS  ",
+            "keyColor": "31"  // = color1
+        },
+        "break",
+        {
+            "type": "kernel",
+            "key": "KER ",
+            "keyColor": "32"
+        },
+        "break",
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": "PKG ",
+            "keyColor": "33"  
+        },
+        "break",
+        {
+            "type": "shell",
+            "key": "SH  ",
+            "keyColor": "34" 
+        },
+        "break",
+        {
+            "type": "terminal",
+            "key": "TER ",
+            "keyColor": "35" 
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": "WM  ",
+            "keyColor": "36" 
+        }
+        //"colors"
+    ]
+}

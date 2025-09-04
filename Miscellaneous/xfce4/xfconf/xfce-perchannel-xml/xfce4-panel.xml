@@ -1,0 +1,173 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="2"/>
+    <property name="dark-mode" type="bool" value="false"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="26"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="8"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="4"/>
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="7"/>
+        <value type="int" value="10"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.098039215686274564"/>
+        <value type="double" value="0.090196078431372534"/>
+        <value type="double" value="0.14117647058823529"/>
+        <value type="double" value="1"/>
+      </property>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="position" type="string" value="p=5;x=24;y=256"/>
+      <property name="length" type="double" value="1"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="40"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="22"/>
+        <value type="int" value="27"/>
+        <value type="int" value="26"/>
+        <value type="int" value="23"/>
+        <value type="int" value="18"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.098039215686274564"/>
+        <value type="double" value="0.090196078431372534"/>
+        <value type="double" value="0.14117647058823529"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="mode" type="uint" value="2"/>
+      <property name="leave-opacity" type="uint" value="80"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="border-width" type="uint" value="0"/>
+      <property name="length-adjust" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="pulseview"/>
+      <property name="button-title" type="string" value=" Apps "/>
+      <property name="custom-menu" type="bool" value="false"/>
+      <property name="small" type="bool" value="true"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="show-generic-names" type="bool" value="false"/>
+    </property>
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="true"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="true"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="middle-click" type="uint" value="1"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="3"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="known-items" type="array">
+        <value type="string" value="obs"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="chrome_status_icon_1"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="clock">
+      <property name="mode" type="uint" value="4"/>
+      <property name="show-seconds" type="bool" value="false"/>
+      <property name="flash-separators" type="bool" value="false"/>
+      <property name="show-meridiem" type="bool" value="false"/>
+      <property name="show-inactive" type="bool" value="false"/>
+      <property name="timezone" type="string" value="Europe/Warsaw"/>
+      <property name="show-week-numbers" type="bool" value="false"/>
+      <property name="show-military" type="bool" value="true"/>
+      <property name="digital-date-font" type="string" value="CozetteVector Bold 12"/>
+      <property name="digital-time-font" type="string" value="CozetteVector Bold 16"/>
+    </property>
+    <property name="plugin-10" type="string" value="actions">
+      <property name="items" type="array">
+        <value type="string" value="+restart"/>
+        <value type="string" value="+suspend"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+      <property name="button-title" type="uint" value="3"/>
+      <property name="appearance" type="uint" value="1"/>
+      <property name="custom-title" type="string" value=""/>
+      <property name="ask-confirmation" type="bool" value="false"/>
+    </property>
+    <property name="plugin-11" type="string" value="showdesktop">
+      <property name="show-on-hover" type="bool" value="false"/>
+    </property>
+    <property name="plugin-12" type="string" value="separator">
+      <property name="style" type="uint" value="3"/>
+    </property>
+    <property name="plugin-18" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/kris"/>
+    </property>
+    <property name="plugin-22" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="false"/>
+      <property name="grouping" type="bool" value="true"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+    </property>
+    <property name="plugin-23" type="string" value="separator">
+      <property name="style" type="uint" value="3"/>
+    </property>
+    <property name="plugin-26" type="string" value="pager">
+      <property name="rows" type="uint" value="4"/>
+      <property name="miniature-view" type="bool" value="true"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-27" type="string" value="separator">
+      <property name="style" type="uint" value="3"/>
+      <property name="expand" type="bool" value="false"/>
+    </property>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-7" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="numbering" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+      <property name="wrap-workspaces" type="bool" value="true"/>
+    </property>
+  </property>
+</channel>

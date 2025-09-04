@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="last-settings-migration-version" type="uint" value="1"/>
+  <property name="backdrop" type="empty">
+    <property name="screen0" type="empty">
+      <property name="monitorHDMI-2" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/home/kris/Downloads/something-beautiful-in-nature.jpg"/>
+        </property>
+      </property>
+      <property name="monitorHDMI-A-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/home/kris/Downloads/pixelart_night_train_cozy_gas_RoyalNaym.png"/>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="790"/>
+    <property name="window-height" type="int" value="559"/>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="file-icons" type="empty">
+      <property name="show-device-fixed" type="bool" value="true"/>
+      <property name="show-device-removable" type="bool" value="true"/>
+    </property>
+    <property name="use-custom-label-text-color" type="bool" value="true"/>
+    <property name="label-text-color" type="array">
+      <value type="double" value="0.8784313725490196"/>
+      <value type="double" value="0.87058823529411766"/>
+      <value type="double" value="0.95686274509803926"/>
+      <value type="double" value="1"/>
+    </property>
+    <property name="style" type="int" value="1"/>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show" type="bool" value="true"/>
+  </property>
+</channel>
