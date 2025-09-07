@@ -36,7 +36,7 @@ alias fp='fzf --preview "bat {}"'
 
 alias so='source ~/.zshrc; clear && ff'
 alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-alias sys-update='rm -rf ~/.cache/paru && paru -Syu; omz update; rustup update; nvim -c "PlugUpgrade | PlugUpdate"'
+alias sys-update='rm -rf ~/.cache/paru && paru -Syu; rustup update; nvim --headless -c "PlugUpgrade | PlugUpdate" -c "qa"; omz update'
 
 # git
 alias ga="git add"
