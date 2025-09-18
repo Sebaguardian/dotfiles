@@ -5,7 +5,7 @@ font-size = 18
 ## too small
 # window-title-font-family = CozetteVector
 
-theme = rose-pine
+theme = Rose Pine
 window-theme = ghostty
 
 # background-opacity = 0.85
