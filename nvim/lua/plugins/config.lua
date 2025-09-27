@@ -1,13 +1,25 @@
 require('nvim-autopairs').setup {
     disable_in_macro = true,
 }
-require('Comment').setup()
 
 require('jule').setup {
   format_on_save = true,
   enable_cmp = true,
 }
 
+-- require('mason').setup({
+--     ui = {
+--         icons = {
+--             package_installed = "✓",
+--             package_pending = "➜",
+--             package_uninstalled = "✗"
+--         }
+--     }
+-- })
+--
+-- require('mason-lspconfig').setup({
+--     ensure_installed = { "lua_ls" }
+-- })
 
 require('cord').setup {
   display = {
@@ -69,4 +81,5 @@ require('lualine').setup {
 }
 
 
+require('Comment').setup()
 require("colorizer").setup{}

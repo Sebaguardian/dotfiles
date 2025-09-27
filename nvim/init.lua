@@ -2,7 +2,10 @@ require('plugins/load')
 require('plugins/config')
 require('plugins/special')
 require('keymaps')
--- require('lsp')
+require('lsp')
+-- require('lsp/idk')
+-- require('lsp/rbullshi')
+-- require('lsp/completion')
 
 local options = {
     
@@ -16,7 +19,6 @@ local options = {
     shiftwidth = 4,
     scrolloff = 4,
     sidescrolloff = 4,
-    
 }
 
 -- set option to given values

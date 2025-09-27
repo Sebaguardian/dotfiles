@@ -17,6 +17,8 @@ map("n", "<C-UP>", "<cmd>m .-2<cr>", silent)
 map("n", "J", "<cmd>m .+1<cr>", silent)     -- move current line 1 line down
 map("n", "<C-DOWN>", "<cmd>m .+1<cr>", silent)
 
+map("n", "Y", "y$") -- yank to end of line
+
 map("n", "<leader>P", ":PlugInstall<CR>", silent) --vim-plug install
 map("n", "<leader>U", ":PlugUpdate | PlugUpgrade<CR>", silent) --vim-plug update & upgrade
 
