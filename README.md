@@ -2,6 +2,8 @@
 
 ![Preview_1](./Assets/Img1.png)
 
+![Preview_2 - clone hero](./Assets/Img2.png)
+
 ## Main tools:
 - Arch Linux
     - *Xfce4 as wm* 
