@@ -1,0 +1,113 @@
+hide-cursor-when-typing = true
+
+confirm-before-quit = false
+
+[cursor]
+shape = 'block'
+blinking = false
+
+[editor]
+ program = "lvim"
+ args = []
+
+[window]
+width = 700
+height = 500
+mode = "windowed"
+# opacity = 0.8
+blur = true
+decorations = "enabled"
+colorspace = "display-p3"
+
+# [renderer]
+# performance = "high"
+# backend = "automatic"
+# disable-unfocused-render = false
+# level = 1
+# filters = ["newpixiecrt"] # balatro like
+
+[fonts]
+size = 14
+
+# Doesn't work yet
+# [fonts.regular]
+# family = "FiraCodeNerdFontMono-Regular"
+# style = "Normal"
+# weight = 400
+
+# [fonts.bold]
+# family = "cascadiamono"
+# style = "Normal"
+# weight = 800
+#
+# [fonts.italic]
+# family = "cascadiamono"
+# style = "Italic"
+# weight = 400
+#
+# [fonts.bold-italic]
+# family = "cascadiamono"
+# style = "Italic"
+# weight = 800
+
+[scroll]
+multiplier = 4.0
+divider = 1.0
+
+# Example:
+[navigation]
+mode = "Bookmark"
+clickable = false
+hide-if-single = true
+use-current-path = true
+# Doesn't work, idk why
+color-automation = [
+  { program = "lvim", color = "#656597" },
+  { program = "nvim", color = "#656597" },
+  { program = "pacman", color = "#ddad66" }
+]
+
+# Example 4 for MacOS with tmux installed by homebrew
+# [shell]
+# program = "/opt/homebrew/bin/tmux"
+# args = ["new-session", "-c", "/var/www"]
+
+[colors]
+background = '#1f1d45'
+foreground = '#f8dcc0'
+selection-background = '#706b4e'
+selection-foreground = '#f3d9c4'
+cursor = '#efbf38'
+black = '#050404'
+red = '#bd0013'
+green = '#4ab118'
+yellow = '#e7741e'
+blue = '#0f4ac6'
+magenta = '#665993'
+cyan = '#70a598'
+white = '#f8dcc0'
+light_black = '#4e7cbf'
+light_red = '#fc5f5a'
+light_green = '#9eff6e'
+light_yellow = '#efc11a'
+light_blue = '#1997c6'
+light_magenta = '#9b5953'
+light_cyan = '#c8faf4'
+light_white = '#f6f5fb'
+
+[bindings]
+keys = [
+  # Enable VI mode on escape, when not in VI mode.
+  # { key = "esc", mode = "~vi", action = "ToggleVIMode" },
+
+  # Panel split
+  { key = "r", with = "super | shift", action = "SplitRight" },
+  { key = "d", with = "super | shift", action = "SplitDown" },
+
+  # Panel resize actions
+  { key = "k", with = "super | shift", action = "MoveDividerUp" },
+  { key = "j", with = "super | shift", action = "MoveDividerDown" },
+  { key = "l", with = "super | shift", action = "MoveDividerLeft" },
+  { key = "h", with = "super | shift", action = "MoveDividerRight" },
+]
+# More information in: https://raphamorim.io/rio/docs/key-bindings

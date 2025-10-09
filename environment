@@ -1,0 +1,6 @@
+EDITOR="lvim"
+
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+MOZC_IBUS_CANDIDATE_WINDOW=ibus

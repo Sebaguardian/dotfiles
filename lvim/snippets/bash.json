@@ -1,0 +1,12 @@
+{
+  "Create Bash Function": {
+    "prefix": "bashfunc",
+    "body": [
+      "function ${1:function_name}() {",
+      "  ${2:# function body}",
+      "}",
+      "$0"
+    ],
+    "description": "Create a Bash function"
+  }
+}
