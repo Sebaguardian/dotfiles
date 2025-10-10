@@ -6,7 +6,7 @@ require('lsp')
 -- require('lsp/idk')
 -- require('lsp/rbullshi')
 -- require('lsp/completion')
-
+	
 local options = {
     
     number = true,

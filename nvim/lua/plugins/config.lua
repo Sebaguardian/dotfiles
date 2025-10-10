@@ -7,20 +7,6 @@ require('jule').setup {
   enable_cmp = true,
 }
 
--- require('mason').setup({
---     ui = {
---         icons = {
---             package_installed = "✓",
---             package_pending = "➜",
---             package_uninstalled = "✗"
---         }
---     }
--- })
---
--- require('mason-lspconfig').setup({
---     ensure_installed = { "lua_ls" }
--- })
-
 require('cord').setup {
   display = {
     theme = 'default',
@@ -38,7 +24,6 @@ require('cord').setup {
 require('smear_cursor').setup({
     cursor_color = '#e0def4',
 })
-
 
 require('nvim-cursorline').setup {
   cursorline = {
@@ -80,6 +65,15 @@ require('lualine').setup {
   },
 }
 
+require('Comment').setup({
+    toggler = {
+        ---Line-comment toggle keymap
+        line = '<C-/>',
+    },
+        opleader = {
+        ---Block-comment keymap
+        line = '<C-/>',
+    },
+})
 
-require('Comment').setup()
 require("colorizer").setup{}
