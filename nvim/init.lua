@@ -3,15 +3,12 @@ require('plugins/config')
 require('plugins/special')
 require('keymaps')
 require('lsp')
--- require('lsp/idk')
--- require('lsp/rbullshi')
--- require('lsp/completion')
-	
+
 local options = {
-    
+
     number = true,
     relativenumber = true,
-    
+
     expandtab = true,
     termguicolors = true,
 
@@ -25,6 +22,16 @@ local options = {
 for option, value in pairs(options) do
     vim.opt[option] = value
 end
+
+vim.diagnostic.config {
+  signs = false,
+  underline = true,
+  virtual_text = {
+    virt_text_pos = "right_align",
+    suffix = " ",
+  },
+  update_in_insert = true,
+}
 
 vim.g.rustfmt_autosave = 1
 

@@ -35,4 +35,6 @@ Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-vsnip')
 Plug('hrsh7th/vim-vsnip')
 
+Plug('MunifTanjim/nui.nvim')
+Plug('VonHeikemen/fine-cmdline.nvim')
 vim.call('plug#end')

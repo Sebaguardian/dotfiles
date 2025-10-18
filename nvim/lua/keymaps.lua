@@ -31,3 +31,6 @@ map("n", "<leader>c", "<cmd>ColorizerToggle<CR>", silent) -- toggle colorizer
 -- Telescope
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", no_silent)
 map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", no_silent)
+
+-- fine cmdline
+vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
