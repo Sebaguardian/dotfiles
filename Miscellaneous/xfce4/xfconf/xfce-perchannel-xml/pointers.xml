@@ -33,4 +33,14 @@
       <property name="Device_Enabled" type="int" value="0"/>
     </property>
   </property>
+  <property name="Sony_Interactive_Entertainment_Wireless_Controller_Touchpad" type="empty">
+    <property name="Properties" type="empty">
+      <property name="libinput_Disable_While_Typing_Enabled" type="int" value="1"/>
+      <property name="libinput_Click_Method_Enabled" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="0"/>
+      </property>
+      <property name="Device_Enabled" type="int" value="0"/>
+    </property>
+  </property>
 </channel>

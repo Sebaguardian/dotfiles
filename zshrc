@@ -36,7 +36,7 @@ alias fp='fzf --preview "bat {}"'
 
 alias so='source ~/.zshrc; clear && ff'
 alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-alias sys-update='rm -rf ~/.cache/paru && paru -Syu; rustup update; nvim --headless -c "PlugUpgrade | PlugUpdate" -c "qa"; omz update'
+alias sys-update='rm -rf ~/.cache/paru && paru -Syu; rustup update; nvim --headless -c "PlugUpgrade | PlugUpdate | MasonUpdate" -c "qa"; omz update'
 
 # git
 alias ga="git add"
@@ -60,9 +60,9 @@ plugins=(
 )
 # plugins from Arch repository
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh
-#source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 ######## startup ########
 ff

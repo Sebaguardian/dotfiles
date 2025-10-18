@@ -3,10 +3,10 @@
 <channel name="keyboard-layout" version="1.0">
   <property name="Default" type="empty">
     <property name="XkbDisable" type="bool" value="false"/>
-    <property name="XkbLayout" type="string" value="es,pl"/>
-    <property name="XkbVariant" type="string" value=","/>
+    <property name="XkbLayout" type="string" value="pl,pl,ru"/>
+    <property name="XkbVariant" type="string" value=",dvorak,phonetic"/>
     <property name="XkbOptions" type="empty">
-      <property name="Compose" type="string" value="compose:ralt"/>
+      <property name="Compose" type="string" value="compose:rctrl"/>
       <property name="Group" type="string" value="grp:alt_caps_toggle"/>
     </property>
     <property name="XkbModel" type="string" value="pc105"/>

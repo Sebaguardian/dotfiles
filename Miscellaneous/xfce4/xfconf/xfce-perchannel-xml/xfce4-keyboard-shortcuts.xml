@@ -53,6 +53,8 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Super&gt;z" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;q" type="string" value="kitty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xkill"/>
+      <property name="&lt;Super&gt;l" type="string" value="xfce4-screensaver-command -a"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Super&gt;F12" type="string" value="xfce4-screenshooter -f"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
