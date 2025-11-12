@@ -102,7 +102,7 @@
 ### User Extensions
 - [Fuzz Application Search](https://codeberg.org/mkhl/gnome-shell-extension-fuzzy-application-search)
 - [Input Method Panel](https://github.com/wengxt/gnome-shell-extension-kimpanel)
-- [User style sheet](https://github.com/TomaszGasior/gnome-shell-user-stylesheet)
+- ~~[User style sheet](https://github.com/TomaszGasior/gnome-shell-user-stylesheet)~~ [Open Bar](https://extensions.gnome.org/extension/6580/open-bar/)
 - [User Themes](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
 - [Wallpaper Slideshow](https://gitlab.com/AndrewZaech/azwallpaper)
 - [WTMB (Window Thumbnails)](https://github.com/G-dH/window-thumbnails)
