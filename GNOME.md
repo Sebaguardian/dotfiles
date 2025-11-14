@@ -106,6 +106,7 @@
 - [User Themes](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
 - [Wallpaper Slideshow](https://gitlab.com/AndrewZaech/azwallpaper)
 - [WTMB (Window Thumbnails)](https://github.com/G-dH/window-thumbnails)
+- [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 
 ### System Extensions
 - Removable Drive Menu
