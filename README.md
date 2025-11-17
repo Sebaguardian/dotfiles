@@ -1,6 +1,6 @@
-# My scuffed repo for my scuffe dotfiles 
+# My scuffed repo for my scuffed dotfiles 
 
-![preview](preview.png)
+![preview](preview.webp)
 
 ## GNOME
  [gnome](GNOME.md)
