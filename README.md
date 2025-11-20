@@ -7,3 +7,6 @@
 
 ## ZEN
  [zen](ZEN-BROWSER.md)
+
+## WALLPAPERS
+- [Dead by daylight](https://deadbydaylight.com/media/)
