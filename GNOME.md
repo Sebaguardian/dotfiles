@@ -107,6 +107,7 @@
 - [Wallpaper Slideshow](https://gitlab.com/AndrewZaech/azwallpaper)
 - [WTMB (Window Thumbnails)](https://github.com/G-dH/window-thumbnails)
 - [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+- [Screen Rotate](https://extensions.gnome.org/extension/5389/screen-rotate/) - *requires `iio-sensor-proxy` to work*
 
 ### System Extensions
 - Removable Drive Menu
