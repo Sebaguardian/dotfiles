@@ -1,0 +1,104 @@
+{
+  // === general ===
+
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+  "margin-top": 0,
+  "exclusive": true,
+  "height": 0, // Uncomment to set a fixed height
+  "mode": "dock",
+  "output": ["HDMI-A-2"],
+  "reload_style_on_change": true,
+
+  // === position ===
+
+  "modules-left": [
+    "niri/workspaces",
+    "clock",
+    "custom/music"
+  ],
+
+  "modules-center": [
+    "niri/window"
+  ],
+
+  "modules-right": [
+    "tray",
+    "memory",
+    "cpu",
+    "temperature"
+  ],
+
+  // === MODULES ===
+
+  // === modules-left ===
+
+  "niri/workspaces": {
+  	"format": "{icon}",
+  	"format-icons": {
+  		"active": "",
+  		"default": ""
+  	}
+  },
+
+  "clock": {
+    "timezone": "Europe/Warsaw",
+    "format": " {:%H:%M} ", // 24 hour format
+    "interval": 60,
+    "tooltip": true,
+    "tooltip-format": "{:%A %d %B}"
+  },
+  
+  "custom/music": {
+    "escape": true,
+    "interval" : 10,
+    "tooltop" : false,
+    "exec" : "playerctl metadata --format '{{ artist }}   {{ title }} '",
+    "on-click" : "playerctl play-pause",
+    "max-length" : 70
+  },
+  
+
+  // === modules-center ===
+
+  "niri/window": {
+    "format": "{}",
+    "max-length": 80,
+    "rewrite": {
+        "(.*) — LibreWolf": "$1", // (—) = Em Dash, code 151
+        "(.*) — LibreWolf Private Browsing": "$1",
+        "(.*) - Youtube — LibreWolf": "$1",
+        "(.*) - Discord": "$1",
+        "lowfi": " lowfi  "
+    }
+  },
+
+  // === modules-right ===
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 6
+  },
+
+  "memory": {
+    "format": "  {}% ",
+    "tooltip": "false"
+  },
+
+  "cpu": {
+    "format": " {usage}% ",
+    "tooltip": "false"
+  },
+
+  "temperature": {
+    "format": "{icon} {temperatureC}°C ",
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  }
+}
