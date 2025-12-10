@@ -24,6 +24,15 @@
 ## barrens.png
 ![barrens.png](./barrens.png)
 
+## BNA-michiru.jpg
+![BNA-michiru.jpg](./BNA-michiru.jpg)
+
+## BNA.png
+![BNA.png](./BNA.png)
+
+## BNA-wolfntanuki.jpg
+![BNA-wolfntanuki.jpg](./BNA-wolfntanuki.jpg)
+
 ## burden_light.png
 ![burden_light.png](./burden_light.png)
 
@@ -101,6 +110,21 @@
 
 ## futaba.jpg
 ![futaba.jpg](./futaba.jpg)
+
+## FW12 Wallpaper Black.png
+![FW12 Wallpaper Black.png](./FW12 Wallpaper Black.png)
+
+## FW12 Wallpaper Bubblegum.png
+![FW12 Wallpaper Bubblegum.png](./FW12 Wallpaper Bubblegum.png)
+
+## FW12 Wallpaper Gray.png
+![FW12 Wallpaper Gray.png](./FW12 Wallpaper Gray.png)
+
+## FW12 Wallpaper Lavender.png
+![FW12 Wallpaper Lavender.png](./FW12 Wallpaper Lavender.png)
+
+## FW12 Wallpaper Sage.png
+![FW12 Wallpaper Sage.png](./FW12 Wallpaper Sage.png)
 
 ## glen.png
 ![glen.png](./glen.png)
