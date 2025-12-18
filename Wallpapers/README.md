@@ -60,6 +60,9 @@
 ## classic-ghost-face-collection-art.jpg
 ![classic-ghost-face-collection-art.jpg](./classic-ghost-face-collection-art.jpg)
 
+## collage_photobw.jpg
+![collage_photobw.jpg](./collage_photobw.jpg)
+
 ## Courtyard.png
 ![Courtyard.png](./Courtyard.png)
 
@@ -228,6 +231,12 @@
 ## owl-house-glyphs.jpg
 ![owl-house-glyphs.jpg](./owl-house-glyphs.jpg)
 
+## panes.png
+![panes.png](./panes.png)
+
+## peaking.jpg
+![peaking.jpg](./peaking.jpg)
+
 ## persona-5-scramble.jpg
 ![persona-5-scramble.jpg](./persona-5-scramble.jpg)
 
@@ -383,4 +392,7 @@
 
 ## watch-dogs2-markus.jpg
 ![watch-dogs2-markus.jpg](./watch-dogs2-markus.jpg)
+
+## winking.jpg
+![winking.jpg](./winking.jpg)
 

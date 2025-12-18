@@ -3,11 +3,13 @@
 # TODO show for each file size e.g. 1920x1080
 
 IMAGE_DIR="."
-FETCH_DIR="$HOME/Downloads/Wallpapers"
+#FETCH_DIR="$HOME/Downloads/Wallpapers"
 README_FILE="README.md"
 
-read -r -p "Is this your wallpaper fetch directory: $FETCH_DIR If not please do Ctrl+c to exit "
-cp "$FETCH_DIR"/* "$IMAGE_DIR"
+if [ -n "$FETCH_DIR" ]; then
+        read -r -p "Is this your wallpaper fetch directory: $FETCH_DIR If not please do Ctrl+c to exit "
+        cp "$FETCH_DIR"/* "$IMAGE_DIR"
+fi
 
 rm -f $README_FILE
 echo -e "# wallpapers\n" > $README_FILE
