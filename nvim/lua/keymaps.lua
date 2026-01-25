@@ -11,7 +11,6 @@ map("", "<Space>", "<Nop>", silent)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
 map("n", "K", "<cmd>m .-2<cr>", silent)     -- move current line 1 line up
 map("n", "<C-UP>", "<cmd>m .-2<cr>", silent)
 map("n", "J", "<cmd>m .+1<cr>", silent)     -- move current line 1 line down
@@ -28,9 +27,16 @@ map("n", "<leader>o", ':silent !xdg-open "<cWORD>" &<CR>', silent) --open a url 
 map("n", "<C-t>", "<cmd>Ex<CR>", silent) -- open file explorer
 map("n", "<leader>c", "<cmd>ColorizerToggle<CR>", silent) -- toggle colorizer
 
--- Telescope
-map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", no_silent)
-map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", no_silent)
+map("n", "<leader><leader>", "<Plug>(artio-files)", no_silent)
+map("n", "<leader>fg", "<Plug>(artio-grep)", no_silent)
 
--- fine cmdline
-vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+-- smart file picker
+map("n", "<leader>ff", "<Plug>(artio-smart)", no_silent)
+
+-- general built-in pickers
+map("n", "<leader>fh", "<Plug>(artio-helptags)", no_silent)
+map("n", "<leader>fb", "<Plug>(artio-buffers)", no_silent)
+map("n", "<leader>f/", "<Plug>(artio-buffergrep)", no_silent)
+map("n", "<leader>fo", "<Plug>(artio-oldfiles)", no_silent)
+
+map("n", "<leader>u", vim.cmd.Undotree, silent)

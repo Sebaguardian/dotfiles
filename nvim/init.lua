@@ -1,9 +1,3 @@
-require('plugins/load')
-require('plugins/config')
-require('plugins/special')
-require('keymaps')
-require('lsp')
-
 local options = {
 
     number = true,
@@ -26,13 +20,28 @@ end
 vim.diagnostic.config {
   signs = false,
   underline = true,
-  virtual_text = {
-    virt_text_pos = "right_align",
-    suffix = " ",
+  virtual_text = false,
+  virtual_lines = {
+      current_line = true,
   },
   update_in_insert = true,
 }
 
 vim.g.rustfmt_autosave = 1
 
+
+vim.o.exrc = true
+
+vim.o.grepprg = "grep -rni --"
+vim.o.grepformat = "%f:%l:%c:%m"
+
+require("vim._extui").enable({ enable = true, msg = { target = "msg" } })
+
+require('keymaps')
+require('plugins/load')
+require('plugins/config')
+require('plugins/special')
+require('lsp')
+
 vim.cmd.colorscheme('rose-pine')
+

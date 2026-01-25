@@ -20,9 +20,18 @@ require('cord').setup {
   },
 }
 
-
 require('smear_cursor').setup({
     cursor_color = '#e0def4',
+})
+
+require('player-one').setup({
+  -- theme = "crystal",
+  master_volume = 0.03
+})
+
+require("nidhogg").setup({
+  images = false,    -- requires image.nvim (optional)
+  format = "long"    -- possible values: short, long
 })
 
 require('nvim-cursorline').setup {

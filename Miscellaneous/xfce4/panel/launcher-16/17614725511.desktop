@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=FluffyChat
+Comment=The cutest instant messenger in the [matrix]
+Exec=fluffychat
+Icon=fluffychat
+Path=
+Terminal=false
+StartupNotify=false

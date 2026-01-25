@@ -42,6 +42,7 @@
         <value type="int" value="12"/>
         <value type="int" value="13"/>
         <value type="int" value="14"/>
+        <value type="int" value="16"/>
         <value type="int" value="15"/>
         <value type="int" value="9"/>
         <value type="int" value="27"/>
@@ -91,6 +92,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="qpwgraph"/>
         <value type="string" value="obs"/>
         <value type="string" value="steam"/>
         <value type="string" value="chrome_status_icon_1"/>
@@ -110,6 +112,7 @@
     </property>
     <property name="plugin-10" type="string" value="actions">
       <property name="items" type="array">
+        <value type="string" value="+logout-dialog"/>
         <value type="string" value="+restart"/>
         <value type="string" value="+suspend"/>
         <value type="string" value="+shutdown"/>
@@ -121,7 +124,6 @@
         <value type="string" value="-separator"/>
         <value type="string" value="-separator"/>
         <value type="string" value="-logout"/>
-        <value type="string" value="-logout-dialog"/>
       </property>
       <property name="button-title" type="uint" value="3"/>
       <property name="appearance" type="uint" value="1"/>
@@ -187,6 +189,11 @@
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17582130611.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17614725511.desktop"/>
       </property>
     </property>
   </property>

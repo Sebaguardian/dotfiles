@@ -1,3 +1,4 @@
+MTAB_SAVE_FORMAT_v1.9.8_
 {
   "options": {
     "showOptionsButton": false
@@ -6,9 +7,14 @@
     "name": "kris"
   },
   "title": {
-    "defaultTitle": "mtab",
+    "defaultTitle": "👎☜☹❄✌☼🕆☠☜",
     "dynamic": {
       "enabled": true
+    },
+    "effect": "none",
+    "typewriter": {
+      "speed": 500,
+      "remainCount": 1
     },
     "faviconType": "custom"
   },
@@ -16,14 +22,14 @@
     "enabled": true,
     "font": {
       "type": "custom",
-      "custom": "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      "custom": "https://api.fonts.coollabs.io/css2?family=Press+Start+2P&display=swap"
     },
     "textColor": "#e0def4",
     "textSize": 2.1,
     "type": "custom",
     "customText": "MY\\nDELTARUNE.",
     "weather": {
-      "unitsType": "f"
+      "unitsType": "c"
     }
   },
   "wallpaper": {
@@ -65,10 +71,13 @@
     "searchIconColor": "#00a8b3",
     "bookmarkIconColor": "#3b82f6",
     "selectIconColor": "#f59e0b",
+    "recognizeLinks": true,
+    "linkTextColor": "#0ea5e9",
     "engine": "startpage",
     "useCustomEngine": false,
     "customEngineURL": "",
     "focusedBorderColor": "#ffff00",
+    "suggestions": true,
     "assist": {
       "date": true,
       "math": true,
@@ -88,7 +97,7 @@
     "numberKeys": true,
     "lineOrientation": "bottom",
     "defaultFolderIconType": "ri-folder-fill",
-    "userDefinedCols": 4,
+    "userDefinedCols": 5,
     "userDefined": [
       {
         "type": "bookmark",
@@ -107,6 +116,15 @@
         "iconType": "ri-youtube-fill",
         "iconColor": "#eb6f92",
         "fill": "ss"
+      },
+      {
+        "type": "bookmark",
+        "name": "catsky",
+        "url": "https://catsky.social/",
+        "color": "#cba6f7",
+        "iconType": "nf-md-cat",
+        "iconColor": "#cba6f7",
+        "fill": ""
       },
       {
         "type": "bookmark",

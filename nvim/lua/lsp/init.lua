@@ -134,25 +134,30 @@ vim.api.nvim_create_autocmd('LspAttach', {
     matching = { disallow_symbol_nonprefix_matching = false }
   })
 
-  -- Set up lspconfig.
-  -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  -- TODO change to smth else or i guess comment works idk
-  -- require('lspconfig')['lua_ls'].setup {
-  --   capabilities = capabilities
-  -- }
+vim.lsp.config("lua_ls", {
+  on_init = function(client)
+    if client.workspace_folders then
+      local path = client.workspace_folders[1].name
+      if
+        path ~= vim.fn.stdpath("config")
+        and (vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc"))
+      then
+        return
+      end
+    end
 
--- makes me go err
- -- require('neovim/nvim-lspconfig').setup({
---     local lspconfig = require('lspconfig')
---     lspconfig.lua_ls.setup({})
--- })
-
--- local lspconfig = require('lspconfig')
--- local capabilities = require('cmp_nvim_lsp').default_capabilities()
---
--- lspconfig.lua_ls.setup({
---   capabilities = capabilities,
---   -- add other settings if needed
--- })
-
+    client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+      runtime = {
+        version = "LuaJIT",
+      },
+      workspace = {
+        checkThirdParty = false,
+        library = {
+          vim.env.VIMRUNTIME,
+          "${3rd}/luv/library",
+          "${3rd}/love2d/library",
+        },
+      },
+    })
+  end
+})

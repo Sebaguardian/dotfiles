@@ -5,12 +5,12 @@
   <property name="Notify" type="int" value="1"/>
   <property name="AutoEnableProfiles" type="int" value="3"/>
   <property name="Default" type="empty">
-    <property name="HDMI-A-1" type="string" value="Acer Technologies 24&quot;">
+    <property name="HDMI-A-0" type="string" value="AlgolTek, Inc. 15&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="73113e759bbd8223801d28cd0ed44033da3cc59a"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="74.972502921564583"/>
-      <property name="ModeFlags" type="uint64" value="9"/>
+      <property name="EDID" type="string" value="2d3f4a83079d1d4b30b54f28ac556c97f4acfd9b"/>
+      <property name="Resolution" type="string" value="1024x768"/>
+      <property name="RefreshRate" type="double" value="60.003840245775727"/>
+      <property name="ModeFlags" type="uint64" value="10"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -20,5 +20,21 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
+    <property name="HDMI-A-1" type="string" value="Acer Technologies 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="73113e759bbd8223801d28cd0ed44033da3cc59a"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="74.972502921564583"/>
+      <property name="ModeFlags" type="uint64" value="9"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
   </property>
+  <property name="IdentityPopups" type="bool" value="false"/>
 </channel>

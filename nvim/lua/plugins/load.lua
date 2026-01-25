@@ -20,8 +20,6 @@ Plug('numToStr/Comment.nvim')
 Plug('ssteinbach/vim-pico8-syntax')
 
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim')
-
 Plug('mason-org/mason.nvim')
 Plug('mason-org/mason-lspconfig.nvim')
 
@@ -35,6 +33,8 @@ Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-vsnip')
 Plug('hrsh7th/vim-vsnip')
 
-Plug('MunifTanjim/nui.nvim')
-Plug('VonHeikemen/fine-cmdline.nvim')
+Plug('comfysage/artio.nvim')
+Plug('jackplus-xyz/player-one.nvim')
+Plug('https://codeberg.org/koibtw/nidhogg.nvim')
+
 vim.call('plug#end')
