@@ -95,7 +95,7 @@
 | Windows focus | Click to Focus |
 
 ### Startup Applications
-- Fcitx
+- ~~Fcitx~~ - switch to [Fcitx5](https://wiki.archlinux.org/title/Fcitx5) that doesn't requires it, *atleast on GNOME*
 
 ## Extensions
 
