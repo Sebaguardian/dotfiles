@@ -33,8 +33,9 @@ Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-vsnip')
 Plug('hrsh7th/vim-vsnip')
 
-Plug('comfysage/artio.nvim')
 Plug('jackplus-xyz/player-one.nvim')
+
+Plug('comfysage/artio.nvim')
 Plug('https://codeberg.org/koibtw/nidhogg.nvim')
 
 vim.call('plug#end')

@@ -1,0 +1,19 @@
+tab = "output"
+char_set = "compat"
+enforce_max_volume = true
+
+keybindings = [
+    { key = { Char = "a" }, action = { SetAbsoluteVolume = 0.60 } },
+    { key = { Char = "d" }, action = { SetAbsoluteVolume = 1.15 } },
+
+    # Use F-keys to select tabs
+    { key = { F = 1 }, action = { SelectTab = 0 } },
+    { key = { F = 2 }, action = { SelectTab = 1 } },
+    { key = { F = 3 }, action = { SelectTab = 2 } },
+    { key = { F = 4 }, action = { SelectTab = 3 } },
+    { key = { F = 5 }, action = { SelectTab = 4 } },
+
+    # Add/Subtract 10%
+    { key = "Left", modifiers = "SHIFT", action = { SetRelativeVolume = -0.10 } },
+    { key = "Right", modifiers = "SHIFT", action = { SetRelativeVolume = 0.10 } },
+]

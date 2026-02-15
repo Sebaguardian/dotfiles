@@ -29,13 +29,12 @@ vim.diagnostic.config {
 
 vim.g.rustfmt_autosave = 1
 
-
 vim.o.exrc = true
 
 vim.o.grepprg = "grep -rni --"
 vim.o.grepformat = "%f:%l:%c:%m"
 
-require("vim._extui").enable({ enable = true, msg = { target = "msg" } })
+-- require("vim._extui").enable({ enable = true, msg = { target = "msg" } })
 
 require('keymaps')
 require('plugins/load')
