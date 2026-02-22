@@ -1,0 +1,151 @@
+# delay startup to wait for sixel execution
+[general]
+delay_startup = 10
+
+[interface]
+header_cmd = """
+
+# The path of the image to be displayed
+image_file="$HOME/.config/otter-launcher/otter_shocked.webp"
+
+# Set the image's width and height, which decide the position of printed texts
+image_width=17
+image_height=6
+
+# pad the image with spaces
+image_padding_top=1
+image_padding_left=2
+
+# The text to be printed should be written between the two "EOF"s
+printed_lines=$(cat << EOF
+\u001B[90m
+░█▀█░▀█▀░▀█▀░█▀▀░█▀█░░░░░ ░ ░
+░█░█░░█░░░█░░█▀▀░█▀▄░▀▀▀░ ░ ░
+░▀▀▀░░▀░░░▀░░▀▀▀░▀░▀░░░░░ ░ ░
+░█░░░█▀█░█░█░█▀█░█▀▀░█░█░ ░ ░
+░█░░░█▀█░█░█░█░█░█░░░█▀█░ ░ ░
+░▀▀▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░▀░ ░ ░
+EOF
+)
+
+# main function
+function chafa-text() {
+  # pad printed_lines with empty lines to the height of the image
+  line_count=$(echo "$printed_lines" | wc -l)
+  additional_lines=$((image_height - line_count))
+  for (( i=0; i<additional_lines; i++ )); do
+    printed_lines+="\n"
+  done
+  # Render the image with chafa at the padded position
+  if (( $image_padding_top > 0 )); then
+    printf '\n%.0s' $(seq 1 $image_padding_top)
+  fi
+  chafa --size $((image_width))x$((image_height)) "$image_file" | while IFS= read -r line; do
+  printf "\u001B[$((image_padding_left))G"
+    printf '\u001B[%dG%s\n' "$((image_padding_left + 1))" "$line"
+  done
+  # Move cursor to the starting line of the image
+  printf "\u001B[$((image_height + 1))A"
+  # Move each of printed_lines' start position to image_width + 1
+  echo -e "$printed_lines" | while IFS= read -r line; do
+    printf '\u001B[%dG%s\n' "$((image_width))" "$line"
+  done
+}
+
+# run the function
+chafa-text
+"""
+
+
+header = """
+  \u001B[31;1m \u001B[0m $USER@$(echo $HOSTNAME)            \u001B[31m\u001B[0m $(mpstat | awk 'FNR ==4 {print $3}')%  \u001B[33m󰍛\u001B[0m $(free -h | awk 'FNR == 2 {print $3}' | sed 's/i//')
+  \u001B[31;1m>>\u001B[0;1m """
+indicator_with_arg_module = "$ "
+indicator_no_arg_module = "^ "
+place_holder = "otter with the dark side :3"
+suggestion_mode = "hint"
+prefix_color = "\u001B[33m"
+description_color = "\u001B[39m"
+place_holder_color = "\u001B[30m"
+hint_color = "\u001B[90m"
+
+########## MODULES ##########
+# requirements: fzf, mstat, eventualy niri
+
+[[modules]]
+description = "desktop programs"
+prefix = "app"
+cmd = """
+desktop_file() {
+find /usr/share/applications -name "*.desktop" 2>/dev/null
+find /usr/local/share/applications -name "*.desktop" 2>/dev/null
+find "$HOME/.local/share/applications" -name "*.desktop" 2>/dev/null
+find /var/lib/flatpak/exports/share/applications -name "*.desktop" 2>/dev/null
+find "$HOME/.local/share/flatpak/exports/share/applications" -name "*.desktop" 2>/dev/null
+}
+selected="$(desktop_file | sed 's/.desktop$//g' | sort | fzf --padding 1,3 --info-command 'echo -e " desktop apps ($FZF_POS/$FZF_TOTAL_COUNT)"' --cycle --gutter " " --pointer " ▌" --color "bg+:-1,pointer:1,info:8,separator:8,scrollbar:0" --prompt '  ' -m -d / --with-nth -1 )"
+[ -z "$selected" ] && exit
+echo "$selected" | while read -r line ; do setsid -f gtk-launch "$(basename $line)"; done
+"""
+
+[[modules]]
+description = "search archwiki"
+prefix = "aw"
+cmd = "xdg-open https://wiki.archlinux.org/index.php?search='{}'"
+with_argument = true
+url_encode = true
+unbind_proc = true
+
+[[modules]]
+description = "search packages"
+prefix = "pac"
+cmd = "xdg-open https://archlinux.org/packages/?q='{}'"
+with_argument = true
+url_encode = true
+unbind_proc = true
+
+[[modules]]
+description = "search the AUR"
+prefix = "aur"
+cmd = "xdg-open https://aur.archlinux.org/packages?K='{}'"
+with_argument = true
+url_encode = true
+unbind_proc = true
+
+[[modules]]
+description = "shell commands"
+prefix = "sh"
+cmd = "$(printf $TERM | sed 's/xterm-//g') -e sh -c \"{}\""
+with_argument = true
+unbind_proc = true
+
+[[modules]]
+description = "open files (fzf)"
+prefix = "fo"
+cmd = """
+find $HOME -type f -not -path '*/.cache/*' 2>/dev/null | fzf --padding 1,3 --info-command 'printf " files ($FZF_POS/$FZF_TOTAL_COUNT)"' --cycle --gutter ' ' --pointer ' ▌' --color 'bg+:-1,pointer:1,info:8,separator:8,scrollbar:0' --prompt '  ' | setsid -f xargs -r -I [] xdg-open '[]'
+"""
+
+[[modules]]
+description = "search youtube"
+prefix = "yt"
+cmd = "xdg-open 'https://www.youtube.com/results?search_query={}'"
+with_argument = true
+url_encode = true
+unbind_proc = true
+
+[[modules]]
+description = "niri window switcher"
+prefix = "sw"
+cmd = """
+niri msg -j windows | 
+  jq -r '.[] | ((.id |tostring) + " [" + (.app_id)) + "] " + (.title)' | 
+	#rg [[:alpha:]] | rg -v otter-launcher |
+	rg [[:alpha:]] |
+	fzf --padding 1,2 --info-command 'printf " windows"' --cycle --gutter " " --pointer " ▌" --color "bg+:-1,pointer:1,info:8,separator:8,scrollbar:0" --prompt '  ' | { 
+		read -r id name 
+		if [ -n "$id" ]; then
+		  niri msg action focus-window --id $id
+		fi
+	}
+"""
