@@ -58,7 +58,7 @@ chafa-text
 
 
 header = """
-  \u001B[31;1m \u001B[0m $USER@$(echo $HOSTNAME)            \u001B[31m\u001B[0m $(mpstat | awk 'FNR ==4 {print $3}')%  \u001B[33m󰍛\u001B[0m $(free -h | awk 'FNR == 2 {print $3}' | sed 's/i//')
+  \u001B[31;1m \u001B[0m $USER\u001B[0;36m@\u001B[0;37m$(echo $HOSTNAME)            \u001B[31m\u001B[0m $(mpstat | awk 'FNR ==4 {print $3}')%  \u001B[33m󰍛\u001B[0m $(free -h | awk 'FNR == 2 {print $3}' | sed 's/i//')
   \u001B[31;1m>>\u001B[0;1m """
 indicator_with_arg_module = "$ "
 indicator_no_arg_module = "^ "
@@ -70,7 +70,7 @@ place_holder_color = "\u001B[30m"
 hint_color = "\u001B[90m"
 
 ########## MODULES ##########
-# requirements: fzf, mstat, eventualy niri
+# requirements: fzf, mstat, eventualy niri, lowfi
 
 [[modules]]
 description = "desktop programs"
@@ -148,4 +148,11 @@ niri msg -j windows |
 		  niri msg action focus-window --id $id
 		fi
 	}
+"""
+
+[[modules]]
+description = "launch lofi player"
+prefix = "lowfi"
+cmd = """
+lowfi -c -w 10
 """
