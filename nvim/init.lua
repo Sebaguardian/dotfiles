@@ -34,6 +34,11 @@ vim.o.exrc = true
 vim.o.grepprg = "grep -rni --"
 vim.o.grepformat = "%f:%l:%c:%m"
 
+-- Don't put command automatically commands after enter and <o>
+
+-- doesnt work :(
+vim.opt.formatoptions:remove({ 'r', 'o' })
+
 -- require("vim._extui").enable({ enable = true, msg = { target = "msg" } })
 
 require('keymaps')

@@ -35,7 +35,8 @@ Plug('hrsh7th/vim-vsnip')
 
 Plug('jackplus-xyz/player-one.nvim')
 
-Plug('comfysage/artio.nvim')
+-- Plug('comfysage/artio.nvim')
 Plug('https://codeberg.org/koibtw/nidhogg.nvim')
 
+Plug('nxhung2304/lastplace.nvim')
 vim.call('plug#end')

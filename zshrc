@@ -35,8 +35,7 @@ alias bap='bat -p'
 alias fp='fzf --preview "bat {}"'
 
 alias so='source ~/.zshrc; clear && ff'
-alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-alias sys-update='rm -rf ~/.cache/paru && paru -Syu; rustup update; nvim --headless -c "PlugUpgrade | PlugUpdate | MasonUpdate" -c "qa"; omz update'
+alias vencord-fix='sh -c "$(curl -sS https://vencord.dev/install.sh)" -- -repair -location "$XDG_CONFIG_HOME/discord"'
 
 # git
 alias ga="git add"
@@ -46,6 +45,7 @@ alias gc="git commit"
 alias gcl="git clone"
 alias gd="git diff"
 alias gs="git status"
+alias gsh="git show"
 alias gi="git init"
 alias gl="git log --graph --all --pretty=format:'%C(yellow)%h %C(white) %an  %ar%C(auto)  %D%n%s%n'" # minimalistic
 alias glf="git log --graph --all --pretty" # full
@@ -67,8 +67,25 @@ source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh
 ######## startup ########
 ff
 
-
 ######## functions ########
+sys-update() {
+    set -e
+
+    dc_ver=$(pacman -Q discord)
+
+    rm -rf ~/.cache/paru && paru -Syu # doesnt work"$1" # for flags | pr=${$1:-paru -Syu}
+
+    if [[ $(pacman -Q discord) != "$dc_ver" ]]; then
+        sh -c "$(curl -sS https://vencord.dev/install.sh)" -- -repair -location "$XDG_CONFIG_HOME/discord"
+    fi
+
+    nvim --headless -c "PlugUpgrade | PlugUpdate | MasonUpdate" -c "qa"
+    # rustup update
+    omz update
+
+    set +e
+}
+
 function cd() {
     { z "$@" 2>/dev/null && ls } || echo -e "Directory \e[91m$*\e[0m not found! \e[91mYou are not a [[BIG SHOT]]\e[0m"
 }
@@ -88,32 +105,32 @@ colors() {
 }
 
 # Open the current path or file in GitHub
-gho() {
-	local file=$1
-	local remote=${2:-origin}
-
-	# get the git root dir, branch, and remote URL
-	local gr=$(git rev-parse --show-toplevel)
-	local branch=$(git rev-parse --abbrev-ref HEAD)
-	local url=$(git config --get "remote.$remote.url")
-
-	[[ -n $gr && -n $branch && -n $remote ]] || return 1
-
-	# construct the path
-	local path=${PWD/#$gr/}
-	[[ -n $file ]] && path+=/$file
-
-	# extract the username and repo name
-	local a
-	IFS=:/ read -a a <<< "$url"
-	local len=${#a[@]}
-	local user=${a[len-2]}
-	local repo=${a[len-1]%.git}
-
-	url="https://github.com/$user/$repo/tree/$branch$path"
-	echo "$url"
-	xdg-open "$url"
-}
+# gho() {
+# 	local file=$1
+# 	local remote=${2:-origin}
+#
+# 	# get the git root dir, branch, and remote URL
+# 	local gr=$(git rev-parse --show-toplevel)
+# 	local branch=$(git rev-parse --abbrev-ref HEAD)
+# 	local url=$(git config --get "remote.$remote.url")
+#
+# 	[[ -n $gr && -n $branch && -n $remote ]] || return 1
+#
+# 	# construct the path
+# 	local path=${PWD/#$gr/}
+# 	[[ -n $file ]] && path+=/$file
+#
+# 	# extract the username and repo name
+# 	local a
+# 	IFS=:/ read -a a <<< "$url" # -a not a flag in zsh and $url unset
+# 	local len=${#a[@]}
+# 	local user=${a[len-2]}
+# 	local repo=${a[len-1]%.git}
+#
+# 	url="https://github.com/$user/$repo/tree/$branch$path"
+# 	echo "$url"
+# 	xdg-open "$url"
+# }
 
 ######## fzf ########
 export FZF_DEFAULT_OPTS="
@@ -150,3 +167,8 @@ bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
 bindkey "^g" backward-char
 bindkey "^h" forward-char
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/kris/.config/.dart-cli-completion/zsh-config.zsh ]] && . /home/kris/.config/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]

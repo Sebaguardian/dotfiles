@@ -85,4 +85,8 @@ require('Comment').setup({
     },
 })
 
-require("colorizer").setup{}
+require("colorizer").setup{
+     options = {
+         suppress_deprecation = true
+     }
+}

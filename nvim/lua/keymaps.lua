@@ -5,7 +5,6 @@ local function map(mode, key, val, verbose)
 	vim.keymap.set(mode, key, val, { noremap = true, silent = verbose })
 end
 
-
 -- set leader
 map("", "<Space>", "<Nop>", silent)
 vim.g.mapleader = " "
@@ -41,3 +40,5 @@ map("n", "<leader>f/", "<Plug>(artio-buffergrep)", no_silent)
 map("n", "<leader>fo", "<Plug>(artio-oldfiles)", no_silent)
 
 map("n", "<leader>u", vim.cmd.Undotree, silent)
+
+-- map("n", "<leader>f", "zfa}", silent) doesn't work

@@ -1,5 +1,4 @@
-MTAB_SAVE_FORMAT_v1.9.8_
-{
+MTAB_SAVE_FORMAT_v1.12.5_{
   "options": {
     "showOptionsButton": false
   },
@@ -29,24 +28,29 @@ MTAB_SAVE_FORMAT_v1.9.8_
     "type": "custom",
     "customText": "MY\\nDELTARUNE.",
     "weather": {
-      "unitsType": "c"
+      "unitsType": "f"
     }
   },
   "wallpaper": {
-    "type": "fileUpload",
+    "type": "file-upload",
     "enabled": true,
-    "url": "https://merrygoroundmagazine.com/wp-content/uploads/2018/12/Deltarune.gif",
+    "frequency": "constant",
+    "urls": [
+      "https://merrygoroundmagazine.com/wp-content/uploads/2018/12/Deltarune.gif"
+    ],
     "filters": {
       "brightness": "0.7",
       "blur": "0px"
-    }
+    },
+    "solidColors": [
+      "#171717"
+    ]
   },
   "ui": {
     "style": "glass",
     "glassColor": "#19172490",
     "blurStrength": "16px",
-    "foregroundColor": "#191724",
-    "backgroundColor": "#191724",
+    "foregroundColor": "#210721",
     "highlightColor": "#ffffff20",
     "cornerStyle": "round",
     "customCSS": "/* input custom css... */"
@@ -60,34 +64,39 @@ MTAB_SAVE_FORMAT_v1.9.8_
   },
   "search": {
     "enabled": true,
-    "font": {
-      "type": "custom",
-      "custom": "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-    },
-    "textColor": "#e0def4",
-    "placeholderText": "search...",
-    "bookmarkPlaceholderText": "find bookmark...",
-    "placeholderTextColor": "#908caa",
-    "searchIconColor": "#00a8b3",
-    "bookmarkIconColor": "#3b82f6",
-    "selectIconColor": "#f59e0b",
-    "recognizeLinks": true,
-    "linkTextColor": "#0ea5e9",
-    "engine": "startpage",
+    "engine": "duckduckgo",
     "useCustomEngine": false,
     "customEngineURL": "",
-    "focusedBorderColor": "#ffff00",
+    "buttons": {
+      "clear": true,
+      "search": true
+    },
+    "recognizeLinks": true,
     "suggestions": true,
     "assist": {
       "date": true,
       "math": true,
       "definitions": true,
-      "conversions": true
-    }
+      "conversions": true,
+      "passwordGenerator": true
+    },
+    "placeholderText": "search...",
+    "bookmarkPlaceholderText": "find bookmark...",
+    "focusedBorderColor": "#ffff00",
+    "font": {
+      "type": "custom",
+      "custom": "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    },
+    "textColor": "#e0def4",
+    "placeholderTextColor": "#908caa",
+    "searchIconColor": "#00a8b3",
+    "bookmarkIconColor": "#3b82f6",
+    "selectIconColor": "#f59e0b",
+    "linkTextColor": "#0ea5e9"
   },
   "hotkeys": {
     "enabled": true,
-    "activationKey": " ",
+    "activationKey": "<space>",
     "closePageKey": "x",
     "searchBookmarksKey": "b"
   },
@@ -95,45 +104,44 @@ MTAB_SAVE_FORMAT_v1.9.8_
     "type": "user-defined",
     "showBookmarkNames": false,
     "numberKeys": true,
-    "lineOrientation": "bottom",
+    "enablePagination": true,
+    "maxBookmarkRowsPerPage": 2,
+    "lineOrientation": "top",
+    "defaultIconColor": "#ffffff",
     "defaultFolderIconType": "ri-folder-fill",
-    "userDefinedCols": 5,
+    "userDefinedCols": 6,
     "userDefined": [
-      {
-        "type": "bookmark",
-        "name": "reddit",
-        "url": "https://www.reddit.com",
-        "color": "#ea9d34",
-        "iconType": "ri-reddit-fill",
-        "iconColor": "#ea9d34",
-        "fill": ""
-      },
       {
         "type": "bookmark",
         "name": "youtube",
         "url": "https://youtube.com",
         "color": "#eb6f92",
         "iconType": "ri-youtube-fill",
-        "iconColor": "#eb6f92",
-        "fill": "ss"
+        "iconColor": "#eb6f92"
       },
       {
         "type": "bookmark",
-        "name": "catsky",
-        "url": "https://catsky.social/",
-        "color": "#cba6f7",
-        "iconType": "nf-md-cat",
-        "iconColor": "#cba6f7",
-        "fill": ""
+        "name": "reddit",
+        "url": "https://www.reddit.com",
+        "color": "#ea9d34",
+        "iconType": "ri-reddit-fill",
+        "iconColor": "#ea9d34"
       },
       {
         "type": "bookmark",
-        "name": "Arch Wiki",
-        "url": "https://wiki.archlinux.org/title/Main_page",
-        "color": "#1793d1",
-        "iconType": "nf-linux-archlinux",
-        "iconColor": "#1793d1",
-        "fill": ""
+        "name": "witchsky",
+        "url": "https://witchsky.app/",
+        "color": "#ed5345",
+        "iconType": "fa-solid fa-hat-wizard",
+        "iconColor": "#ed5345"
+      },
+      {
+        "type": "bookmark",
+        "name": "tumblr",
+        "url": "https://www.tumblr.com/",
+        "color": "#001935",
+        "iconType": "nf-fa-square_tumblr",
+        "iconColor": "#001935"
       },
       {
         "type": "bookmark",
@@ -141,8 +149,15 @@ MTAB_SAVE_FORMAT_v1.9.8_
         "url": "https://github.com",
         "color": "#6366f1",
         "iconType": "ri-github-fill",
-        "iconColor": "#6366f1",
-        "fill": ""
+        "iconColor": "#6366f1"
+      },
+      {
+        "type": "bookmark",
+        "name": "Arch Wiki",
+        "url": "https://wiki.archlinux.org/title/Main_page",
+        "color": "#1793d1",
+        "iconType": "nf-linux-archlinux",
+        "iconColor": "#1793d1"
       }
     ],
     "defaultBlockyCols": 4,

@@ -1,0 +1,9 @@
+{
+  "linesToScroll": 2,
+  "up": "k",
+  "down": "j",
+  "enterEditMode": "i",
+  "searchDoc": "/",
+  "scrollBottom": "g",
+  "scrollTop": "0"
+}

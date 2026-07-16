@@ -1,0 +1,12 @@
+{
+  "vimMode": true,
+  "defaultViewMode": "preview",
+  "livePreview": false,
+  "showLineNumber": true,
+  "showInlineTitle": true,
+  "readableLineLength": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "/",
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true
+}

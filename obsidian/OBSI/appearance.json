@@ -1,0 +1,13 @@
+{
+  "cssTheme": "Rose Pine",
+  "accentColor": "#524f67",
+  "interfaceFontFamily": "CozetteVector",
+  "textFontFamily": "CozetteVector,Inter",
+  "monospaceFontFamily": "Fira Code",
+  "showRibbon": false,
+  "showViewHeader": true,
+  "theme": "obsidian",
+  "baseFontSizeAction": true,
+  "baseFontSize": 17,
+  "nativeMenus": false
+}

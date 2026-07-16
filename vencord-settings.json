@@ -56,7 +56,8 @@
             },
             "Settings": {
                 "enabled": true,
-                "settingsLocation": "aboveNitro"
+                "settingsLocation": "aboveNitro",
+                "includeVencordInfoWhenCopying": true
             },
             "SupportHelper": {
                 "enabled": true
@@ -230,9 +231,6 @@
             "KeepCurrentChannel": {
                 "enabled": false
             },
-            "LastFMRichPresence": {
-                "enabled": false
-            },
             "LoadingQuotes": {
                 "enabled": true,
                 "replaceEvents": true,
@@ -265,9 +263,6 @@
                 "ignoreGuilds": "",
                 "collapseDeleted": false,
                 "inlineEdits": true
-            },
-            "MessageTags": {
-                "enabled": false
             },
             "MoreCommands": {
                 "enabled": false
@@ -370,6 +365,7 @@
                             "collapsed": false,
                             "channels": [
                                 "1101869430230765628",
+                                "1436194227078955130",
                                 "718728651201445972",
                                 "1262461020417556625"
                             ]
@@ -381,28 +377,33 @@
                             "collapsed": false,
                             "channels": [
                                 "1286596580576722976",
+                                "1369345715788320880",
                                 "1353820903162642594",
                                 "1322640159359107152",
                                 "1210678152008040488",
                                 "1275914150094307391",
                                 "1301644971111354419",
+                                "1482008998696976587",
                                 "1076233303625052181",
                                 "1322640193353945099",
-                                "1369345715788320880",
-                                "1209566874053124155"
+                                "1209566874053124155",
+                                "1384102444191055983",
+                                "1523631174092591268",
+                                "1461051691469242524",
+                                "1459251788107481274"
                             ]
                         },
                         {
                             "id": "r0drn77zi5",
-                            "name": "-̗̀ (ↀωↀ) -̖́",
+                            "name": "ฅ^•ﻌ•^ฅ",
                             "color": 10276824,
-                            "collapsed": false,
+                            "collapsed": true,
                             "channels": [
                                 "1159122125576216627",
                                 "1153686874884427938",
-                                "1155821865961533482",
                                 "1035491228474679408",
-                                "1016255541443579915"
+                                "1016255541443579915",
+                                "1472349475296116872"
                             ]
                         }
                     ],
@@ -424,7 +425,8 @@
             },
             "QuickReply": {
                 "enabled": true,
-                "shouldMention": 2
+                "shouldMention": 2,
+                "ignoreBlockedAndIgnored": true
             },
             "ReactErrorDecoder": {
                 "enabled": false
@@ -472,7 +474,7 @@
                 "enabled": false
             },
             "ShowHiddenChannels": {
-                "enabled": true,
+                "enabled": false,
                 "hideUnreads": true,
                 "showMode": 0,
                 "defaultAllowedUsersAndRolesDropdownState": true
@@ -589,7 +591,8 @@
                 "enabled": false
             },
             "FixSpotifyEmbeds": {
-                "enabled": true
+                "enabled": true,
+                "volume": 10
             },
             "FixYoutubeEmbeds": {
                 "enabled": true
@@ -714,7 +717,7 @@
                 "enabled": false
             },
             "CopyFileContents": {
-                "enabled": false
+                "enabled": true
             },
             "StickerPaste": {
                 "enabled": false
@@ -737,7 +740,8 @@
                 "enabled": false
             },
             "FixImagesQuality": {
-                "enabled": false
+                "enabled": true,
+                "originalImagesInChat": false
             },
             "HideMedia": {
                 "enabled": false
@@ -765,6 +769,24 @@
             },
             "AutoDNDWhilePlaying": {
                 "enabled": false
+            },
+            "MoreQuickReactions": {
+                "enabled": false
+            },
+            "CustomCommands": {
+                "enabled": false
+            },
+            "CharacterCounter": {
+                "enabled": false
+            },
+            "NoMiddleClickPaste": {
+                "enabled": false
+            },
+            "ConcatenatedComponentExtractor": {
+                "enabled": true
+            },
+            "MusicRichPresence": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -777,10 +799,15 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": true,
-            "settingsSyncVersion": 1760738595817
+            "settingsSyncVersion": 1784189933140
         },
         "transparentUNSAFE_USE_AT_OWN_RISK": true,
-        "eagerPatches": false
+        "eagerPatches": false,
+        "uiElements": {
+            "chatBarButtons": {},
+            "messagePopoverButtons": {}
+        },
+        "windowsMaterial": "none"
     },
-    "quickCss": "/**\n * @name system24 (rosé pine)\n * @description a tui-style discord theme. based on rosé pine theme (https://rosepinetheme.com).\n * @author refact0r\n * @version 2.0.0\n * @invite nz87hXyvcy\n * @website https://github.com/refact0r/system24\n * @source https://github.com/refact0r/system24/blob/master/theme/system24-rose-pine.theme.css\n * @authorId 508863359777505290\n * @authorLink https://www.refact0r.dev\n*/\n\n/* import theme modules */\n@import url('https://refact0r.github.io/system24/build/system24.css');\n\nbody {\n    /* font, change to '' for default discord font */\n    --font: 'DM Mono'; /* change to '' for default discord font */\n    --code-font: 'DM Mono'; /* change to '' for default discord font */\n    font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */\n    letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/\n\n    /* sizes */\n    --gap: 12px; /* spacing between panels */\n    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */\n    --border-thickness: 2px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */\n    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */\n\n    /* animation/transition options */\n    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */\n    --list-item-transition: 0.2s ease; /* transition for list items */\n    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */\n\n    /* top bar options */\n    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */\n    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */\n    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */\n    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */\n\n    /* window controls */\n    --custom-window-controls: off; /* off: default window controls, on: custom window controls */\n    --window-control-size: 14px; /* size of custom window controls */\n\n    /* dms button options */\n    --custom-dms-icon: hide; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */\n    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */\n    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */\n    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */\n    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */\n    --custom-dms-background: image; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */\n    --dms-background-image-url: url('https://raw.githubusercontent.com/rose-pine/rose-pine-theme/main/assets/icon.png'); /* url of the background image */\n    --dms-background-image-size: cover; /* size of the background image (css background-size property) */\n    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */\n\n    /* background image options */\n    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */\n    --background-image-url: url(''); /* url of the background image */\n\n    /* transparency/blur options */\n    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */\n    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */\n    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */\n    --panel-blur: off; /* off: no changes, on: blur the background of panels */\n    --blur-amount: 12px; /* amount of blur */\n    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */\n\n    /* other options */\n    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */\n\n    /* unrounding options */\n    --unrounding: off; /* off: default, on: remove rounded corners from panels */\n\n    /* styling options */\n    --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */\n    --ascii-titles: on; /* off: default, on: use ascii font for titles at the start of a channel */\n    --ascii-loader: system24; /* off: default, system24: use system24 ascii loader, cats: use cats loader */\n\n    /* panel labels */\n    --panel-labels: on; /* off: default, on: add labels to panels */\n    --label-color: var(--text-muted); /* color of labels */\n    --label-font-weight: 500; /* font weight of labels */\n}\n\n/* color options */\n:root {\n    --colors: on; /* off: discord default colors, on: midnight custom colors */\n\n    /* text colors */\n    --text-0: var(--bg-3); /* text on colored elements */\n    --text-1: hsl(245deg, 50%, 95%); /* other normally white text */\n    --text-2: hsl(245deg, 50%, 91%); /* headings and important text */\n    --text-3: hsl(246deg, 30%, 80%); /* normal text */\n    --text-4: hsl(248deg, 15%, 61%); /* icon buttons and channels */\n    --text-5: hsl(249deg, 12%, 47%); /* muted channels/chats and timestamps */\n\n    /* background and dark colors */\n    --bg-1: hsl(248deg, 25%, 24%); /* dark buttons when clicked */\n    --bg-2: hsl(248deg, 25%, 18%); /* dark buttons */\n    --bg-3: hsl(247deg, 23%, 15%); /* spacing, secondary elements */\n    --bg-4: hsl(249deg, 22%, 12%); /* main background color */\n    --hover: hsla(250, 20%, 40%, 0.1); /* channels and buttons when hovered */\n    --active: hsla(250, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */\n    --active-2: hsla(250, 20%, 40%, 0.3); /* extra state for transparent buttons */\n    --message-hover: hsla(250, 0%, 0%, 0.1); /* messages when hovered */\n\n    /* accent colors */\n    --accent-1: hsl(2, 65%, 88%); /* links and other accent text */\n    --accent-2: #ebbcba; /* small accent elements */\n    --accent-3: #ebbcba; /* accent buttons */\n    --accent-4: hsl(2, 55%, 78%); /* accent buttons when hovered */\n    --accent-5: hsl(2, 55%, 73%); /* accent buttons when clicked */\n    --accent-new: var(--red-2); /* stuff that's normally red like mute/deafen buttons */\n    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */\n    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */\n    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */\n    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */\n\n    /* status indicator colors */\n    --online: var(--green-2); /* change to #43a25a for default */\n    --dnd: var(--red-2); /* change to #d83a42 for default */\n    --idle: var(--yellow-2); /* change to #ca9654 for default */\n    --streaming: var(--purple-2); /* change to #593695 for default */\n    --offline: var(--text-4); /* change to #83838b for default offline color */\n\n    /* border colors */\n    --border-light: var(--hover); /* general light border color */\n    --border: var(--active); /* general normal border color */\n    --border-hover: var(--accent-2); /* border color of panels when hovered */\n    --button-border: hsl(250, 0%, 100%, 0.1); /* neutral border color of buttons */\n\n    /* base colors */\n    --red-1: hsl(343, 76%, 73%);\n    --red-2: #eb6f92;\n    --red-3: #eb6f92;\n    --red-4: hsl(343, 76%, 63%);\n    --red-5: hsl(343, 76%, 58%);\n\n    --green-1: hsl(197, 49%, 43%);\n    --green-2: #31748f;\n    --green-3: #31748f;\n    --green-4: hsl(197, 49%, 34%);\n    --green-5: hsl(197, 49%, 30%);\n\n    --blue-1: hsl(189, 48%, 78%);\n    --blue-2: #9ccfd8;\n    --blue-3: #9ccfd8;\n    --blue-4: hsl(189, 43%, 68%);\n    --blue-5: hsl(189, 43%, 63%);\n\n    --yellow-1: hsl(35, 88%, 77%);\n    --yellow-2: #f6c177;\n    --yellow-3: #f6c177;\n    --yellow-4: hsl(35, 88%, 67%);\n    --yellow-5: hsl(35, 88%, 62%);\n\n    --purple-1: hsl(267, 57%, 83%);\n    --purple-2: #c4a7e7;\n    --purple-3: #c4a7e7;\n    --purple-4: hsl(267, 57%, 73%);\n    --purple-5: hsl(267, 57%, 68%);\n}"
+    "quickCss": "/**\n * @name system24 (rosé pine)\n * @description a tui-style discord theme. based on rosé pine theme (https://rosepinetheme.com).\n * @author refact0r\n * @version 2.0.0\n * @invite nz87hXyvcy\n * @website https://github.com/refact0r/system24\n * @source https://github.com/refact0r/system24/blob/master/theme/system24-rose-pine.theme.css\n * @authorId 508863359777505290\n * @authorLink https://www.refact0r.dev\n*/\n\n/* import theme modules */\n@import url('https://refact0r.github.io/system24/build/system24.css');\n\n.media-engine-video { transform: none; }\n\nbody {\n    /* font, change to '' for default discord font */\n    --font: 'DM Mono'; /* change to '' for default discord font */\n    --code-font: 'DM Mono'; /* change to '' for default discord font */\n    font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */\n    letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/\n\n    /* sizes */\n    --gap: 12px; /* spacing between panels */\n    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */\n    --border-thickness: 2px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */\n    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */\n\n    /* animation/transition options */\n    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */\n    --list-item-transition: 0.2s ease; /* transition for list items */\n    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */\n\n    /* top bar options */\n    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */\n    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */\n    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */\n    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */\n\n    /* window controls */\n    --custom-window-controls: off; /* off: default window controls, on: custom window controls */\n    --window-control-size: 14px; /* size of custom window controls */\n\n    /* dms button options */\n    --custom-dms-icon: hide; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */\n    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */\n    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */\n    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */\n    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */\n    --custom-dms-background: image; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */\n    --dms-background-image-url: url('https://raw.githubusercontent.com/rose-pine/rose-pine-theme/main/assets/icon.png'); /* url of the background image */\n    --dms-background-image-size: cover; /* size of the background image (css background-size property) */\n    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */\n\n    /* background image options */\n    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */\n    --background-image-url: url(''); /* url of the background image */\n\n    /* transparency/blur options */\n    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */\n    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */\n    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */\n    --panel-blur: off; /* off: no changes, on: blur the background of panels */\n    --blur-amount: 12px; /* amount of blur */\n    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */\n\n    /* other options */\n    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */\n\n    /* unrounding options */\n    --unrounding: off; /* off: default, on: remove rounded corners from panels */\n\n    /* styling options */\n    --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */\n    --ascii-titles: on; /* off: default, on: use ascii font for titles at the start of a channel */\n    --ascii-loader: system24; /* off: default, system24: use system24 ascii loader, cats: use cats loader */\n\n    /* panel labels */\n    --panel-labels: on; /* off: default, on: add labels to panels */\n    --label-color: var(--text-muted); /* color of labels */\n    --label-font-weight: 500; /* font weight of labels */\n}\n\n/* color options */\n:root {\n    --colors: on; /* off: discord default colors, on: midnight custom colors */\n\n    /* text colors */\n    --text-0: var(--bg-3); /* text on colored elements */\n    --text-1: hsl(245deg, 50%, 95%); /* other normally white text */\n    --text-2: hsl(245deg, 50%, 91%); /* headings and important text */\n    --text-3: hsl(246deg, 30%, 80%); /* normal text */\n    --text-4: hsl(248deg, 15%, 61%); /* icon buttons and channels */\n    --text-5: hsl(249deg, 12%, 47%); /* muted channels/chats and timestamps */\n\n    /* background and dark colors */\n    --bg-1: hsl(248deg, 25%, 24%); /* dark buttons when clicked */\n    --bg-2: hsl(248deg, 25%, 18%); /* dark buttons */\n    --bg-3: hsl(247deg, 23%, 15%); /* spacing, secondary elements */\n    --bg-4: hsl(249deg, 22%, 12%); /* main background color */\n    --hover: hsla(250, 20%, 40%, 0.1); /* channels and buttons when hovered */\n    --active: hsla(250, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */\n    --active-2: hsla(250, 20%, 40%, 0.3); /* extra state for transparent buttons */\n    --message-hover: hsla(250, 0%, 0%, 0.1); /* messages when hovered */\n\n    /* accent colors */\n    --accent-1: hsl(2, 65%, 88%); /* links and other accent text */\n    --accent-2: #ebbcba; /* small accent elements */\n    --accent-3: #ebbcba; /* accent buttons */\n    --accent-4: hsl(2, 55%, 78%); /* accent buttons when hovered */\n    --accent-5: hsl(2, 55%, 73%); /* accent buttons when clicked */\n    --accent-new: var(--red-2); /* stuff that's normally red like mute/deafen buttons */\n    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */\n    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */\n    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */\n    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */\n\n    /* status indicator colors */\n    --online: var(--green-2); /* change to #43a25a for default */\n    --dnd: var(--red-2); /* change to #d83a42 for default */\n    --idle: var(--yellow-2); /* change to #ca9654 for default */\n    --streaming: var(--purple-2); /* change to #593695 for default */\n    --offline: var(--text-4); /* change to #83838b for default offline color */\n\n    /* border colors */\n    --border-light: var(--hover); /* general light border color */\n    --border: var(--active); /* general normal border color */\n    --border-hover: var(--accent-2); /* border color of panels when hovered */\n    --button-border: hsl(250, 0%, 100%, 0.1); /* neutral border color of buttons */\n\n    /* base colors */\n    --red-1: hsl(343, 76%, 73%);\n    --red-2: #eb6f92;\n    --red-3: #eb6f92;\n    --red-4: hsl(343, 76%, 63%);\n    --red-5: hsl(343, 76%, 58%);\n\n    --green-1: hsl(197, 49%, 43%);\n    --green-2: #31748f;\n    --green-3: #31748f;\n    --green-4: hsl(197, 49%, 34%);\n    --green-5: hsl(197, 49%, 30%);\n\n    --blue-1: hsl(189, 48%, 78%);\n    --blue-2: #9ccfd8;\n    --blue-3: #9ccfd8;\n    --blue-4: hsl(189, 43%, 68%);\n    --blue-5: hsl(189, 43%, 63%);\n\n    --yellow-1: hsl(35, 88%, 77%);\n    --yellow-2: #f6c177;\n    --yellow-3: #f6c177;\n    --yellow-4: hsl(35, 88%, 67%);\n    --yellow-5: hsl(35, 88%, 62%);\n\n    --purple-1: hsl(267, 57%, 83%);\n    --purple-2: #c4a7e7;\n    --purple-3: #c4a7e7;\n    --purple-4: hsl(267, 57%, 73%);\n    --purple-5: hsl(267, 57%, 68%);\n}"
 }
