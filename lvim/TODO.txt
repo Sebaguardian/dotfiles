@@ -1,4 +1,0 @@
-snippets bash
-
-Plugins:
-        

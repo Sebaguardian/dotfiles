@@ -1,0 +1,51 @@
+local options = {
+
+    number = true,
+    relativenumber = false,
+
+    expandtab = true,
+    termguicolors = true,
+
+    tabstop = 2,
+    shiftwidth = 2,
+    scrolloff = 4,
+    sidescrolloff = 4,
+}
+
+-- set option to given values
+for option, value in pairs(options) do
+    vim.opt[option] = value
+end
+
+vim.diagnostic.config {
+  signs = true,
+  underline = true,
+  virtual_text = false,
+  virtual_lines = {
+      current_line = true,
+  },
+--   update_in_insert = true,
+}
+
+vim.g.rustfmt_autosave = 1
+
+vim.o.exrc = true
+
+vim.o.grepprg = "grep -rni --"
+vim.o.grepformat = "%f:%l:%c:%m"
+
+-- Don't put command automatically commands after enter and <o>
+
+-- doesnt work :(
+vim.opt.formatoptions:remove({ 'r', 'o' })
+
+-- require("vim._extui").enable({ enable = true, msg = { target = "msg" } })
+
+require('keymaps')
+require('plugins/load')
+require('plugins/amity')
+-- require('plugins/lylla') -- TODO fix idk
+require('plugins/config')
+require('lsp')
+
+-- require('plugins/mini') // TODO maybe
