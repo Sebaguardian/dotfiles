@@ -1,5 +1,8 @@
 # wallpapers
 
+## 10th-anniversary-key-art--landscape-.png
+![10th-anniversary-key-art--landscape-.png](./10th-anniversary-key-art--landscape-.png)
+
 ## aesthetic-manga-persona.jpg
 ![aesthetic-manga-persona.jpg](./aesthetic-manga-persona.jpg)
 
@@ -11,6 +14,12 @@
 
 ## amphibia-wallpapers.jpg
 ![amphibia-wallpapers.jpg](./amphibia-wallpapers.jpg)
+
+## AndroidTutorial.jpg
+![AndroidTutorial.jpg](./AndroidTutorial.jpg)
+
+## Arcade.jpg
+![Arcade.jpg](./Arcade.jpg)
 
 ## arch_purple.png
 ![arch_purple.png](./arch_purple.png)
@@ -32,6 +41,15 @@
 
 ## BNA-wolfntanuki.jpg
 ![BNA-wolfntanuki.jpg](./BNA-wolfntanuki.jpg)
+
+## bocchi-cast.png
+![bocchi-cast.png](./bocchi-cast.png)
+
+## bocchi_me_and_three_primary_colors.png
+![bocchi_me_and_three_primary_colors.png](./bocchi_me_and_three_primary_colors.png)
+
+## bocchi_the_rock.jpeg
+![bocchi_the_rock.jpeg](./bocchi_the_rock.jpeg)
 
 ## burden_light.png
 ![burden_light.png](./burden_light.png)
@@ -72,6 +90,12 @@
 ## cursed-legacy-key-art.png
 ![cursed-legacy-key-art.png](./cursed-legacy-key-art.png)
 
+## dancing_skunks__by_simjim91.jpg
+![dancing_skunks__by_simjim91.jpg](./dancing_skunks__by_simjim91.jpg)
+
+## danganronpa1.jpg
+![danganronpa1.jpg](./danganronpa1.jpg)
+
 ## dbd-day-2023-celebration-by-kangyaku-@kangyaku.png
 ![dbd-day-2023-celebration-by-kangyaku-@kangyaku.png](./dbd-day-2023-celebration-by-kangyaku-@kangyaku.png)
 
@@ -83,6 +107,9 @@
 
 ## dead-by-daylight-key-art.png
 ![dead-by-daylight-key-art.png](./dead-by-daylight-key-art.png)
+
+## delta-persona.jpg
+![delta-persona.jpg](./delta-persona.jpg)
 
 ## deltarune-forest.jpg
 ![deltarune-forest.jpg](./deltarune-forest.jpg)
@@ -99,6 +126,21 @@
 ## dishonored.jpg
 ![dishonored.jpg](./dishonored.jpg)
 
+## Dos1.jpg
+![Dos1.jpg](./Dos1.jpg)
+
+## Dos.jpg
+![Dos.jpg](./Dos.jpg)
+
+## Eda's_Requiem_-_938.webp
+![Eda's_Requiem_-_938.webp](./Eda's_Requiem_-_938.webp)
+
+## elemental1.jpg
+![elemental1.jpg](./elemental1.jpg)
+
+## elemental2.jpg
+![elemental2.jpg](./elemental2.jpg)
+
 ## ETG-menu.jpeg
 ![ETG-menu.jpeg](./ETG-menu.jpeg)
 
@@ -107,6 +149,9 @@
 
 ## factory.png
 ![factory.png](./factory.png)
+
+## freeplaymenu.png
+![freeplaymenu.png](./freeplaymenu.png)
 
 ## from_Niko.png
 ![from_Niko.png](./from_Niko.png)
@@ -132,6 +177,15 @@
 ## glen.png
 ![glen.png](./glen.png)
 
+## gnosia-end.jpg
+![gnosia-end.jpg](./gnosia-end.jpg)
+
+## gnosia.jpg
+![gnosia.jpg](./gnosia.jpg)
+
+## gnosia-splatoon.jpeg
+![gnosia-splatoon.jpeg](./gnosia-splatoon.jpeg)
+
 ## gumball.png
 ![gumball.png](./gumball.png)
 
@@ -146,6 +200,12 @@
 
 ## hallowed-catalyst-collection-art.jpg
 ![hallowed-catalyst-collection-art.jpg](./hallowed-catalyst-collection-art.jpg)
+
+## Handhelds.jpg
+![Handhelds.jpg](./Handhelds.jpg)
+
+## heavy_rain.jpg
+![heavy_rain.jpg](./heavy_rain.jpg)
 
 ## helluva-boss.jpg
 ![helluva-boss.jpg](./helluva-boss.jpg)
@@ -162,6 +222,9 @@
 ## hilda-pixelart-wallpapers.png
 ![hilda-pixelart-wallpapers.png](./hilda-pixelart-wallpapers.png)
 
+## hitori_bocchi_gotou.jpg
+![hitori_bocchi_gotou.jpg](./hitori_bocchi_gotou.jpg)
+
 ## infamous-second-son-delsin.jpg
 ![infamous-second-son-delsin.jpg](./infamous-second-son-delsin.jpg)
 
@@ -170,6 +233,12 @@
 
 ## infamous-second-son-karma.png
 ![infamous-second-son-karma.png](./infamous-second-son-karma.png)
+
+## kessoku_bando.jpeg
+![kessoku_bando.jpeg](./kessoku_bando.jpeg)
+
+## Key_image_gnosia.webp
+![Key_image_gnosia.webp](./Key_image_gnosia.webp)
 
 ## Knights.png
 ![Knights.png](./Knights.png)
@@ -198,6 +267,18 @@
 ## LIVINGTHINGS.jpg
 ![LIVINGTHINGS.jpg](./LIVINGTHINGS.jpg)
 
+## lofi-boy-landscape-3840x2160.jpg
+![lofi-boy-landscape-3840x2160.jpg](./lofi-boy-landscape-3840x2160.jpg)
+
+## lofi-girl-synthwave-3840x2160.jpg
+![lofi-girl-synthwave-3840x2160.jpg](./lofi-girl-synthwave-3840x2160.jpg)
+
+## lofi-jake-hora-de-aventura-8448.jpg
+![lofi-jake-hora-de-aventura-8448.jpg](./lofi-jake-hora-de-aventura-8448.jpg)
+
+## lofi-niko.jpg
+![lofi-niko.jpg](./lofi-niko.jpg)
+
 ## lullaby-of-the-dark-key-art.png
 ![lullaby-of-the-dark-key-art.png](./lullaby-of-the-dark-key-art.png)
 
@@ -210,6 +291,12 @@
 ## memory.png
 ![memory.png](./memory.png)
 
+## menuBGBlue.png
+![menuBGBlue.png](./menuBGBlue.png)
+
+## menuBGMagenta.png
+![menuBGMagenta.png](./menuBGMagenta.png)
+
 ## messiah.png
 ![messiah.png](./messiah.png)
 
@@ -218,6 +305,12 @@
 
 ## navigate.png
 ![navigate.png](./navigate.png)
+
+## nds.jpg
+![nds.jpg](./nds.jpg)
+
+## Neverway-Ann_04-10-25.jpg
+![Neverway-Ann_04-10-25.jpg](./Neverway-Ann_04-10-25.jpg)
 
 ## nutshell.png
 ![nutshell.png](./nutshell.png)
@@ -258,8 +351,14 @@
 ## pride-2023-by-@_seagiri.png
 ![pride-2023-by-@_seagiri.png](./pride-2023-by-@_seagiri.png)
 
+## prime.jpg
+![prime.jpg](./prime.jpg)
+
 ## prophets.png
 ![prophets.png](./prophets.png)
+
+## purple.png
+![purple.png](./purple.png)
 
 ## pvz-garden-warfare-2.jpg
 ![pvz-garden-warfare-2.jpg](./pvz-garden-warfare-2.jpg)
@@ -284,6 +383,15 @@
 
 ## refuge.png
 ![refuge.png](./refuge.png)
+
+## remielle-30.jpg
+![remielle-30.jpg](./remielle-30.jpg)
+
+## RetroStyle.jpg
+![RetroStyle.jpg](./RetroStyle.jpg)
+
+## ryo_yamada.jpg
+![ryo_yamada.jpg](./ryo_yamada.jpg)
 
 ## silent-hill-key-art.png
 ![silent-hill-key-art.png](./silent-hill-key-art.png)
@@ -318,6 +426,9 @@
 ## TADC-ending.png
 ![TADC-ending.png](./TADC-ending.png)
 
+## tf-karty.jpg
+![tf-karty.jpg](./tf-karty.jpg)
+
 ## the-artist-lore-art.png
 ![the-artist-lore-art.png](./the-artist-lore-art.png)
 
@@ -327,20 +438,38 @@
 ## The_Owl_House_and_Amphibia.jpg
 ![The_Owl_House_and_Amphibia.jpg](./The_Owl_House_and_Amphibia.jpg)
 
+## The_Owl_House_Disney_TVA_background_1.png
+![The_Owl_House_Disney_TVA_background_1.png](./The_Owl_House_Disney_TVA_background_1.png)
+
+## The_Owl_House_Disney_TVA_background_3.png
+![The_Owl_House_Disney_TVA_background_3.png](./The_Owl_House_Disney_TVA_background_3.png)
+
 ## the-owl-house.jpg
 ![the-owl-house.jpg](./the-owl-house.jpg)
+
+## the-year-of-the-horse 2026-by-x@hfl____.png
+![the-year-of-the-horse 2026-by-x@hfl____.png](./the-year-of-the-horse 2026-by-x@hfl____.png)
 
 ## the-year-of-the-snake-2025-by-@catfffff.jpg
 ![the-year-of-the-snake-2025-by-@catfffff.jpg](./the-year-of-the-snake-2025-by-@catfffff.jpg)
 
+## thwt.jpg
+![thwt.jpg](./thwt.jpg)
+
 ## toh_end.jpg
 ![toh_end.jpg](./toh_end.jpg)
+
+## toh-grom.jpg
+![toh-grom.jpg](./toh-grom.jpg)
 
 ## toh-kingofplushies.jpg
 ![toh-kingofplushies.jpg](./toh-kingofplushies.jpg)
 
 ## tohs2.jpg
 ![tohs2.jpg](./tohs2.jpg)
+
+## TooMany.jpg
+![TooMany.jpg](./TooMany.jpg)
 
 ## tower.png
 ![tower.png](./tower.png)
@@ -375,6 +504,9 @@
 ## vexnxayah.jpg
 ![vexnxayah.jpg](./vexnxayah.jpg)
 
+## wallpapersden.com_hades-2-gaming_1920x1200.jpg
+![wallpapersden.com_hades-2-gaming_1920x1200.jpg](./wallpapersden.com_hades-2-gaming_1920x1200.jpg)
+
 ## watch-dogs1-aiden.jpg
 ![watch-dogs1-aiden.jpg](./watch-dogs1-aiden.jpg)
 
@@ -393,6 +525,12 @@
 ## watch-dogs2-markus.jpg
 ![watch-dogs2-markus.jpg](./watch-dogs2-markus.jpg)
 
+## Watching_and_Dreaming_-_promo_art_by_Amelia_Lorenz.png
+![Watching_and_Dreaming_-_promo_art_by_Amelia_Lorenz.png](./Watching_and_Dreaming_-_promo_art_by_Amelia_Lorenz.png)
+
 ## winking.jpg
 ![winking.jpg](./winking.jpg)
+
+## yuzuha.png
+![yuzuha.png](./yuzuha.png)
 
