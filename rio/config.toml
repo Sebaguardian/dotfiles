@@ -7,7 +7,7 @@ shape = 'block'
 blinking = false
 
 [editor]
- program = "lvim"
+ program = "nvim"
  args = []
 
 [window]
@@ -56,13 +56,12 @@ divider = 1.0
 
 # Example:
 [navigation]
-mode = "Bookmark"
+mode = "Plain"
 clickable = false
 hide-if-single = true
 use-current-path = true
 # Doesn't work, idk why
 color-automation = [
-  { program = "lvim", color = "#656597" },
   { program = "nvim", color = "#656597" },
   { program = "pacman", color = "#ddad66" }
 ]
@@ -73,27 +72,27 @@ color-automation = [
 # args = ["new-session", "-c", "/var/www"]
 
 [colors]
-background = '#1f1d45'
-foreground = '#f8dcc0'
-selection-background = '#706b4e'
-selection-foreground = '#f3d9c4'
-cursor = '#efbf38'
-black = '#050404'
-red = '#bd0013'
-green = '#4ab118'
-yellow = '#e7741e'
-blue = '#0f4ac6'
-magenta = '#665993'
-cyan = '#70a598'
-white = '#f8dcc0'
-light_black = '#4e7cbf'
-light_red = '#fc5f5a'
-light_green = '#9eff6e'
-light_yellow = '#efc11a'
-light_blue = '#1997c6'
+background = '#19171D'
+foreground = '#F2E1E2'
+selection-background = '#262029'
+selection-foreground = '#E8B8C5'
+cursor = '#FEBDD4'
+black = '#0F0D12'
+red = '#D2717F'
+green = '#EDFDE2'
+yellow = '#F4D29B'
+blue = '#86ADCC'
+magenta = '#C7B8E1'
+cyan = '#BFE4DF'
+white = '#F2E1E2'
+light_black = '#141218'
+light_red = '#FEBDD4'
+light_green = '#E9F6CA'
+light_yellow = '#E9AB8C'
+light_blue = '#B1DBC9'
 light_magenta = '#9b5953'
-light_cyan = '#c8faf4'
-light_white = '#f6f5fb'
+light_cyan = '#F7BAE2'
+light_white = '#FAD9ED'
 
 [bindings]
 keys = [
